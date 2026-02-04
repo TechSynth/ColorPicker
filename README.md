@@ -1,2 +1,19 @@
-<img width="732" height="338" alt="image" src="https://github.com/user-attachments/assets/524190f0-ed75-4ecd-82b7-2f3767d05bd5" />
-<img width="750" height="442" alt="image" src="https://github.com/user-attachments/assets/3f6a47c8-d51a-4366-a95f-25080d5f9ab8" />
+# Color Picker
+
+> **Live Demo:** [Click here to view the website](https://techsynth.github.io/ColorPicker/)
+
+A minimalist web tool that extracts a functional color palette from any uploaded image.
+
+## Overview
+This project uses image processing to identify dominant colors and generates a structured palette. It is designed for developers and designers who need quick HEX codes with a focus on accessibility and clean UI.
+
+## Key Features
+* **Automated Extraction:** Uses ColorThief to grab the most prominent colors from images.
+* **Smart Contrast:** Dynamic text color adjustment (black/white) based on background luminance for better readability.
+* **HEX Conversion:** Real-time conversion from RGB to HEX format using Colvertize.
+* **Visual Interface:** Dynamic background gradients and a grid-based layout for clear palette visualization.
+
+## Tech Stack
+* **HTML5 / CSS3:** Custom Grid layout and responsive design.
+* **JavaScript:** Vanilla JS for logic and DOM manipulation.
+* **Libraries:** Granim.js (gradients), ColorThief (color extraction), and Colvertize (color conversion and accessibility).
