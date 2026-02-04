@@ -59,6 +59,7 @@ input{
     font-weight: bold;
     font-size: 0.9rem;
     border-radius: 8px;
+    flex-direction: column;
 }
 
 .divPrincipal {

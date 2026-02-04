@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 palette.forEach((color, index) => {
                     if (boxes[index]) {
-                        const rgbString = `rgb(${color[0]}, ${color[1]}, ${color[2]})`;
+                        const rgbString = `RGB(${color[0]}, ${color[1]}, ${color[2]})`;
                         
                         const hex = colvertize.convert(rgbString, 'css-hex'); //https://github.com/Philipp-M/colvertize
                         
@@ -65,7 +65,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
                         boxes[index].style.backgroundColor = hex;
                         boxes[index].style.color = textColor;
-                        boxes[index].innerHTML = `<span>${hex}</span>`;
+                        boxes[index].innerHTML = `<span>HEX ${hex}</span>`;
+                        boxes[index].innerHTML += `<span>${rgbString}</span>`;
                     }
                 });
             } catch (e) {
